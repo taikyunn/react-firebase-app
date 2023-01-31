@@ -1,10 +1,10 @@
 version: '3.8'
 services:
-  next:
+  react:
     build: .
     volumes:
       - ./frontend:/usr/src/app
     ports:
       - 3000:3000
     tty: true
-    command: sh -c "npm run dev"
+    command: sh -c "npm start"
